@@ -72,7 +72,7 @@ const About = () => {
                                 </div>
                                 <div className="space-y-4 text-text-secondary leading-relaxed">
                                     <p>
-                                        I am a  Science graduate from Sahyadri College of Engineering and Management (2024),
+                                        I am a cience graduate from Sahyadri College of Engineering and Management (2024),
                                         currently working as an LMS Technical Executive at Yaticorp.
                                     </p>
                                     <p>
