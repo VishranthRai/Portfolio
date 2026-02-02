@@ -87,6 +87,9 @@ const Hero = () => {
                                 <a href="mailto:vishranthrai555@gmail.com" className="p-3 rounded-full bg-white/5 text-text-secondary hover:text-accent-primary hover:bg-white/10 transition-all duration-300">
                                     <Mail size={22} />
                                 </a>
+                                <a href="tel:8310697552" className="p-3 rounded-full bg-white/5 text-text-secondary hover:text-accent-primary hover:bg-white/10 transition-all duration-300">
+                                    <Phone size={22} />
+                                </a>
                             </div>
                         </motion.div>
                     </div>
