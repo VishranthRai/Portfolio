@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Linkedin, Github, Mail } from 'lucide-react';
+import { ArrowRight, Linkedin, Github, Mail, Phone } from 'lucide-react';
 import profileImg from '../assets/profile.png';
 
 const Hero = () => {
