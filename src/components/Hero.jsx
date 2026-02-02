@@ -84,10 +84,16 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
-                            className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+                            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
                         >
                             Hi, I'm <br />
-                            <span className="gradient-text-premium block lg:inline">Vishranth Rai</span>
+                            <motion.span
+                                className="gradient-text-premium block mt-2 cursor-pointer"
+                                whileHover={{ scale: 1.05, x: 10 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            >
+                                Vishranth Rai
+                            </motion.span>
                         </motion.h1>
 
                         <motion.div
