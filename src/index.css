@@ -28,7 +28,26 @@
     @apply bg-gradient-to-br from-accent-primary to-accent-secondary bg-clip-text text-transparent;
   }
 
+  .gradient-text-premium {
+    @apply bg-gradient-to-r from-accent-primary via-purple-300 to-accent-secondary bg-clip-text text-transparent bg-[length:200%_auto];
+    animation: text-shimmer 3s linear infinite;
+  }
+
   .section-padding {
     @apply py-24;
+  }
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
