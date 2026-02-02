@@ -1,45 +1,8 @@
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Linkedin, Github, Mail } from 'lucide-react';
+import { ArrowRight, Linkedin, Github, Mail } from 'lucide-react';
 import profileImg from '../assets/profile.png';
 
 const Hero = () => {
-    const [text, setText] = useState('');
-    const [isDeleting, setIsDeleting] = useState(false);
-    const [loopNum, setLoopNum] = useState(0);
-    const [typingSpeed, setTypingSpeed] = useState(150);
-
-    const roles = [
-        "CS Graduate",
-        "LMS Tech Executive",
-        "Full Stack Enthusiast",
-        "Problem Solver"
-    ];
-
-    useEffect(() => {
-        const handleType = () => {
-            const i = loopNum % roles.length;
-            const fullText = roles[i];
-
-            setText(isDeleting
-                ? fullText.substring(0, text.length - 1)
-                : fullText.substring(0, text.length + 1)
-            );
-
-            setTypingSpeed(isDeleting ? 30 : 150);
-
-            if (!isDeleting && text === fullText) {
-                setTimeout(() => setIsDeleting(true), 1500); // Pause at end
-            } else if (isDeleting && text === '') {
-                setIsDeleting(false);
-                setLoopNum(loopNum + 1);
-            }
-        };
-
-        const timer = setTimeout(handleType, typingSpeed);
-        return () => clearTimeout(timer);
-    }, [text, isDeleting, loopNum, roles]);
-
     return (
         <section id="home" className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
             {/* Dynamic Background Glows */}
@@ -95,16 +58,6 @@ const Hero = () => {
                                 Vishranth Rai
                             </motion.span>
                         </motion.h1>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                            className="text-xl md:text-3xl text-text-secondary mb-8 h-[40px] font-medium"
-                        >
-                            I am a <span className="text-text-primary">{text}</span>
-                            <span className="animate-pulse text-accent-primary">|</span>
-                        </motion.div>
 
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
