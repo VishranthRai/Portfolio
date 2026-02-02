@@ -65,7 +65,7 @@ const Hero = () => {
                             transition={{ duration: 0.5, delay: 0.3 }}
                             className="text-lg text-text-secondary mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0"
                         >
-                            Specializing in LMS Operations and building modern digital experiences with a focus on ease of use and visual excellence.
+                            Passionate about thriving in technical environments, leveraging my experience as a Junior Support Engineer, LMS Tech Executive, and React.js Developer to build impactful solutions.
                         </motion.p>
 
                         <motion.div
