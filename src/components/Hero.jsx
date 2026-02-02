@@ -98,11 +98,14 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="flex-1 flex justify-center lg:justify-end"
                     >
-                        <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] group">
-                            {/* Rotating Border */}
-                            <div className="absolute -inset-1 bg-gradient-to-tr from-accent-primary via-transparent to-accent-secondary rounded-[2rem] blur-sm opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[550px] lg:h-[550px] group">
+                            {/* Stronger Background Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-accent-primary/30 rounded-full blur-[80px] -z-10 animate-pulse"></div>
 
-                            <div className="relative w-full h-full rounded-[1.9rem] overflow-hidden bg-bg-secondary border border-white/10 shadow-2xl">
+                            {/* Vibrant Rotating Border */}
+                            <div className="absolute -inset-1.5 bg-gradient-to-tr from-accent-primary via-white/50 to-accent-secondary rounded-[2rem] blur-md opacity-80 group-hover:opacity-100 transition-opacity duration-500 animate-spin-slow"></div>
+
+                            <div className="relative w-full h-full rounded-[1.9rem] overflow-hidden bg-bg-secondary border-2 border-white/20 shadow-2xl z-20">
                                 {/* Image Overlay Gradient */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-bg-primary/80 via-transparent to-transparent z-10"></div>
                                 <img
