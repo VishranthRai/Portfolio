@@ -5,21 +5,21 @@ const projects = [
     {
         title: "Fake Product Detection System",
         desc: "Deep learning-based system using CNN models to classify product images as genuine or manipulated. Helps in identifying counterfeit items.",
-        tags: ["Python", "Deep Learning", "CNN", "SQL"],
+        tags: ["Deep Learning", "CNN", "SQL"],
         link: "https://rb.gy/fkm02z",
         image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
     },
     {
         title: "Bus Pass Application",
         desc: "Mobile application for students to book bus passes online. Features real-time database updates and user-friendly interface.",
-        tags: ["Java", "Android Studio", "Firebase"],
+        tags: ["Android Studio"],
         link: "#",
         image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2017&auto=format&fit=crop"
     },
     {
         title: "Attendance Management System",
         desc: "Efficient system to manage student attendance using NetBeans and MySQL. Features automated reporting and efficient record storage.",
-        tags: ["MySQL", "NetBeans", "Java"],
+        tags: ["MySQL", "NetBeans"],
         link: "#",
         image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop"
     }

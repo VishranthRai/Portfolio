@@ -22,9 +22,9 @@ const About = () => {
     ];
 
     const skills = [
-        { category: "Languages", items: ['Java', 'Python', 'C/C++', 'SQL'] },
-        { category: "Frameworks & Web", items: ['React', 'JavaScript', 'HTML/CSS', 'Firebase'] },
-        { category: "Tools", items: ['MySQL', 'NetBeans', 'Android Studio', 'Git'] }
+        { category: "Languages", items: ['C/C++', 'SQL'] },
+        { category: "Frameworks & Web", items: ['React', 'JavaScript'] },
+        { category: "Tools", items: ['cPanel', 'Pega', 'MySQL', 'NetBeans', 'Android Studio', 'Git'] }
     ];
 
     const volunteering = [
@@ -78,7 +78,7 @@ const About = () => {
                                     <p>
                                         My professional journey involves managing course access, user support, and LMS operations.
                                         Beyond operations, I have hands-on experience in full-stack development, having contributed
-                                        to website development using React and handling backend logic with SQL and Firebase.
+                                        to website development using React and handling backend logic with SQL.
                                     </p>
                                 </div>
                             </div>
