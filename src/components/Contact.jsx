@@ -65,22 +65,28 @@ const Contact = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
                         className="w-full max-w-lg mx-auto bg-bg-secondary p-8 rounded-2xl border border-white/5 text-left"
-                        name="contact"
-                        method="POST"
-                        data-netlify="true"
                         onSubmit={(e) => {
                             e.preventDefault();
                             const formData = new FormData(e.target);
-                            fetch("/", {
+                            const data = Object.fromEntries(formData.entries());
+
+                            // Replace 'YOUR_FORMBEE_API_KEY' with your actual Formbee API key
+                            fetch("https://api.formbee.dev/formbee/YOUR_FORMBEE_API_KEY", {
                                 method: "POST",
-                                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                                body: new URLSearchParams(formData).toString(),
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify(data),
                             })
-                                .then(() => alert("Message sent successfully!"))
-                                .catch((error) => alert(error));
+                                .then((response) => {
+                                    if (response.ok) {
+                                        alert("Message sent successfully!");
+                                        e.target.reset();
+                                    } else {
+                                        alert("Failed to send message. Please check your API key.");
+                                    }
+                                })
+                                .catch((error) => alert("Error: " + error.message));
                         }}
                     >
-                        <input type="hidden" name="form-name" value="contact" />
                         <div className="space-y-6">
                             <div>
                                 <label className="block text-text-secondary text-sm font-medium mb-2">Name</label>
