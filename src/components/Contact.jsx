@@ -71,7 +71,7 @@ const Contact = () => {
                             const data = Object.fromEntries(formData.entries());
 
                             // Replace 'YOUR_FORMSPREE_ID' with your actual Formspree Form ID
-                            fetch("https://formspree.io/f/YOUR_FORMSPREE_ID", {
+                            fetch("https://formspree.io/f/mbdkbzvq", {
                                 method: "POST",
                                 headers: { "Content-Type": "application/json" },
                                 body: JSON.stringify(data),
