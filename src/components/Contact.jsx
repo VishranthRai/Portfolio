@@ -70,8 +70,8 @@ const Contact = () => {
                             const formData = new FormData(e.target);
                             const data = Object.fromEntries(formData.entries());
 
-                            // Replace 'YOUR_FORMBEE_API_KEY' with your actual Formbee API key
-                            fetch("https://api.formbee.dev/formbee/YOUR_FORMBEE_API_KEY", {
+                            // Replace 'YOUR_FORMSPREE_ID' with your actual Formspree Form ID
+                            fetch("https://formspree.io/f/YOUR_FORMSPREE_ID", {
                                 method: "POST",
                                 headers: { "Content-Type": "application/json" },
                                 body: JSON.stringify(data),
@@ -81,7 +81,7 @@ const Contact = () => {
                                         alert("Message sent successfully!");
                                         e.target.reset();
                                     } else {
-                                        alert("Failed to send message. Please check your API key.");
+                                        alert("Failed to send message. Please check your Formspree ID.");
                                     }
                                 })
                                 .catch((error) => alert("Error: " + error.message));
