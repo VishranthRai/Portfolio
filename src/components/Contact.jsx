@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, Send } from 'lucide-react';
+import { Mail, Linkedin, Github, Send, Phone } from 'lucide-react';
 
 const Contact = () => {
     return (
@@ -38,6 +38,12 @@ const Contact = () => {
                                 <Mail size={24} />
                             </div>
                             <span className="text-text-secondary font-medium group-hover:text-text-primary transition-colors">Email</span>
+                        </a>
+                        <a href="tel:+91XXXXXXXXXX" className="flex flex-col items-center gap-3 group">
+                            <div className="p-4 bg-white/5 rounded-full text-text-secondary group-hover:bg-accent-secondary/10 group-hover:text-accent-secondary group-hover:shadow-glow transition-all duration-300">
+                                <Phone size={24} />
+                            </div>
+                            <span className="text-text-secondary font-medium group-hover:text-text-primary transition-colors">Call</span>
                         </a>
                         <a href="https://linkedin.com/in/vishranth-rai" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-3 group">
                             <div className="p-4 bg-white/5 rounded-full text-text-secondary group-hover:bg-accent-secondary/10 group-hover:text-accent-secondary group-hover:shadow-glow transition-all duration-300">

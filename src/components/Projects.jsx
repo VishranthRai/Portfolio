@@ -6,19 +6,22 @@ const projects = [
         title: "Fake Product Detection System",
         desc: "Deep learning-based system using CNN models to classify product images as genuine or manipulated. Helps in identifying counterfeit items.",
         tags: ["Python", "Deep Learning", "CNN", "SQL"],
-        link: "https://rb.gy/fkm02z"
+        link: "https://rb.gy/fkm02z",
+        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
     },
     {
         title: "Bus Pass Application",
         desc: "Mobile application for students to book bus passes online. Features real-time database updates and user-friendly interface.",
         tags: ["Java", "Android Studio", "Firebase"],
-        link: "#"
+        link: "#",
+        image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2017&auto=format&fit=crop"
     },
     {
         title: "Attendance Management System",
         desc: "Efficient system to manage student attendance using NetBeans and MySQL. Features automated reporting and efficient record storage.",
         tags: ["MySQL", "NetBeans", "Java"],
-        link: "#"
+        link: "#",
+        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop"
     }
 ];
 
@@ -45,8 +48,13 @@ const Projects = () => {
                             transition={{ delay: index * 0.1 }}
                             className="bg-bg-secondary rounded-2xl overflow-hidden border border-white/5 hover:-translate-y-2 hover:border-accent-primary/30 hover:shadow-2xl transition-all duration-300 flex flex-col group"
                         >
-                            <div className="h-48 bg-slate-800 relative flex items-center justify-center border-b border-white/5 group-hover:bg-slate-700/50 transition-colors">
-                                <Folder size={48} className="text-white/10 group-hover:text-accent-secondary/50 transition-colors duration-300" />
+                            <div className="h-48 relative overflow-hidden">
+                                <div className="absolute inset-0 bg-slate-900/20 z-10 group-hover:bg-transparent transition-colors duration-300" />
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                />
                             </div>
 
                             <div className="p-6 flex flex-col flex-grow">
