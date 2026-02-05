@@ -61,18 +61,12 @@ const Projects = () => {
                                 <h3 className="text-xl font-heading font-bold mb-2 text-text-primary group-hover:text-accent-secondary transition-colors">{project.title}</h3>
                                 <p className="text-text-secondary text-sm mb-6 flex-grow leading-relaxed">{project.desc}</p>
 
-                                <div className="flex flex-wrap gap-2 mb-6">
+                                <div className="flex flex-wrap gap-2">
                                     {project.tags.map(tag => (
                                         <span key={tag} className="text-xs font-medium text-accent-secondary bg-accent-secondary/10 px-3 py-1 rounded-full">
                                             {tag}
                                         </span>
                                     ))}
-                                </div>
-
-                                <div className="flex items-center gap-4 mt-auto">
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-medium text-text-primary hover:text-accent-primary transition-colors">
-                                        <ExternalLink size={16} /> View Details
-                                    </a>
                                 </div>
                             </div>
                         </motion.div>

@@ -74,7 +74,7 @@ const Hero = () => {
                             transition={{ duration: 0.5, delay: 0.4 }}
                             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center"
                         >
-                            <a href="#projects" className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-accent-primary to-accent-secondary text-white font-bold shadow-lg shadow-accent-primary/25 hover:shadow-accent-primary/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
+                            <a href="#experience" className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-accent-primary to-accent-secondary text-white font-bold shadow-lg shadow-accent-primary/25 hover:shadow-accent-primary/40 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
                                 View Work <ArrowRight size={20} />
                             </a>
                             <div className="flex items-center gap-4 px-4">
