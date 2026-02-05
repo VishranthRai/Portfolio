@@ -72,11 +72,7 @@ const About = () => {
                                 </div>
                                 <div className="space-y-4 text-text-secondary leading-relaxed">
                                     <p>
-                                        As a Computer Science engineering graduate from Sahyadri College of Engineering and Management (2024),
-                                        I am currently serving as an LMS Technical Executive at Yaticorp, where I manage technical operations
-                                        and user support. My professional journey is driven by a passion for building impactful digital
-                                        solutions, leveraging my experience in technical support and website development specifically
-                                        centered around the React JS framework.
+                                        I am a Computer Science Engineering graduate (2024) from Sahyadri College of Engineering and Management and currently work as an LMS Technical Executive at Yaticorp. I specialize in managing technical operations and providing user support, with a strong interest in building impactful digital solutions. My experience includes website development using React JS, where I focus on creating efficient, user-friendly, and scalable web applications.
                                     </p>
                                 </div>
                             </div>
