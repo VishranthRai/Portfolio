@@ -33,13 +33,13 @@ const Contact = () => {
                         transition={{ delay: 0.2 }}
                         className="flex flex-wrap justify-center gap-8 md:gap-16"
                     >
-                        <a href="mailto:vishranthrai452@gmail.com" className="flex flex-col items-center gap-3 group">
+                        <a href="mailto:vishranthrai555@gmail.com" className="flex flex-col items-center gap-3 group">
                             <div className="p-4 bg-white/5 rounded-full text-text-secondary group-hover:bg-accent-secondary/10 group-hover:text-accent-secondary group-hover:shadow-glow transition-all duration-300">
                                 <Mail size={24} />
                             </div>
                             <span className="text-text-secondary font-medium group-hover:text-text-primary transition-colors">Email</span>
                         </a>
-                        <a href="tel:+91XXXXXXXXXX" className="flex flex-col items-center gap-3 group">
+                        <a href="tel:8310697552" className="flex flex-col items-center gap-3 group">
                             <div className="p-4 bg-white/5 rounded-full text-text-secondary group-hover:bg-accent-secondary/10 group-hover:text-accent-secondary group-hover:shadow-glow transition-all duration-300">
                                 <Phone size={24} />
                             </div>
